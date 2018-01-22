@@ -1,0 +1,380 @@
+body{
+    margin: 0px;
+    font-family: helvetica;
+}
+
+body nav
+{
+    background-color: rgb(31, 31, 31);
+    min-height: 3em;
+    padding-top: .2em;
+    box-shadow: 0px 3px 5px dimgrey;
+    position: fixed;
+    min-width: 100%;
+    z-index: 2;
+
+
+}
+body nav ul{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+#navList
+{
+    margin: 0px;
+    align-content: center;
+}
+
+body nav ul li{
+    list-style: none;
+    display: inline;
+    color: white;
+
+}
+nav .user img
+{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Name
+{
+    position: absolute;
+    margin-left: 30%;
+    width: 6em;
+    margin-top: 18%;
+    cursor: pointer;
+}
+
+body .menuBoard ul li:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border-bottom: 2px solid orange;
+
+}
+
+#menu
+{
+    margin-left: 1%;
+    margin-top: 0.3em;
+    position: absolute;
+    transition: all 0.6s;
+}
+#logo
+{
+    margin-left: 4%;
+}
+#user{
+    margin-left: 75%;
+    position: absolute;
+    margin-top: 0.3em ;
+}
+nav i{
+    color: white;
+    cursor: pointer;
+}
+body .menuBoard
+{
+    position: fixed;
+    background-color: white;
+    width: 0px;
+    -moz-border-radius-topleft: 0px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 3px;
+    min-height: 100%;
+    margin-top: 3.3em;
+    transition: all 0.6s;
+    overflow: hidden;
+    z-index: 2;
+
+}
+body .menuBoard ul{
+    margin: 0px;
+    padding: 0px;
+}
+body .menuBoard ul li
+{
+    list-style: none;
+    padding: 1em;
+    border-bottom: 1px solid darkgrey;
+    left: 20%;
+    right: 30%;
+    transition: border 0.8s;
+
+}
+
+/*.mask
+{
+    width: 0px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    transition: width 1s;
+    z-index: 2;
+    overflow: hidden;
+}*/
+
+
+.profileMenu
+{
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 3.2em;
+    margin-left: 70%;
+    color: white;
+    z-index: 2;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.6s;
+    height: 0;
+    min-width: 30%;
+
+}
+.profileMenu li{
+      list-style: none;
+  }
+.profileMenu ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+.profileMenuElement
+{
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    display: inline;
+    float: right;
+}
+.absoluteImage
+{
+    margin-top: 1em;
+    border-radius: 50%;
+    list-style: none;
+    float:left;
+    margin-left: 5%;
+    z-index: 2;
+
+}
+#imageOverlay
+{
+    position: absolute;
+    color: white;
+    z-index: 3;
+    margin: 6.6em 0 0 2.3em;
+    background-color: rgba(0,0,0,0.5);
+    width: 100px;
+    height: 50px;
+    font-size: 10px;
+    border-radius: 0 0 100px 100px;
+    cursor: pointer;
+
+}
+#uName
+{
+    margin-top: 2em;
+    display: inline-block;
+}
+#logOut
+{
+    border: 0px;
+    padding: 5px 9px 5px 9px;
+    background-color: white;
+    margin-top: 1.7em;
+    margin-bottom: 1.3em;
+    margin-right: 2em;
+    float: right;
+}
+#profileButton
+{
+    border: 0px;
+    padding: 5px;
+    background-color: white;
+    margin-top: 1.7em;
+    margin-bottom: 1.3em;
+    margin-left: 2em;
+    float: left;
+}
+
+
+
+
+
+
+
+
+.flexBox i{
+    margin-top: .2em;
+}
+.main
+{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    margin-top: 6%;
+    margin-left: 1%;
+    padding:1em;
+    min-width: 90%;
+    border-radius: 1em;
+    display: inline-flex;
+    overflow: auto;
+
+
+}
+
+.category
+{
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(75, 182, 128);
+    display: block;
+    color: ghostwhite;
+    font-weight: bold;
+}
+.container
+{
+    border: 3px solid rgb(75, 182, 128);
+    margin-bottom: 1em;
+    border-radius: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.flexBox
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 19em;
+
+}
+
+.object
+{
+    width: 6rem;
+    height:6rem;
+    padding: 5%;
+    color: white;
+    margin:.5em;
+    font-size: small;
+    text-align: center;
+    border: 3px solid white;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px;
+}
+.flexBox div:hover
+{
+    border: 3px solid slategrey;
+    transform: scale(1.2);
+    box-shadow: 25px 25px 18px rgba(0,0,0,0.4);
+}
+.flexBox div:active
+{
+    transform: scale(1.1);
+    border:3px solid #fcffc7;
+}
+.flexBox div i{
+    margin-bottom: 0.3em;
+}
+.category1
+{
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(75, 182, 128);
+    display: block;
+    color: ghostwhite;
+    font-weight: bold;
+}
+.container1
+{
+    margin-left: 1%;
+    width: 25em;
+    border: 3px solid rgb(75, 182, 128);
+    margin-bottom: 1em;
+    border-radius: .5em;
+    margin-right: 1em;
+}
+.noticeContainer
+{
+    width: 70%;
+    background-color: darkslategrey;
+    margin-left: 8%;
+    color:white;
+    padding: 2em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.one{
+    background: rgb(106, 86, 179);
+}
+
+.two{
+    background-color: rgb(151, 117, 12);
+}
+.three
+{
+    background-color: rgb(227, 94, 137);
+}
+.four
+{
+    background-color: rgb(76, 100, 88);
+}
+.five
+{
+    background-color: rgb(178, 173, 150);
+}
+.six
+{
+    background-color: rgb(235, 85, 61);
+}
+.seven
+{
+    background-color: rgb(91, 236, 61);
+}
+.eight
+{
+    background-color: rgb(251, 65, 83);
+}
+.nine
+{
+    background-color: rgb(9, 158, 207);
+}
+
+
+
+
+
+
+
+
+
+
+
+

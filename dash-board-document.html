@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trident</title>
+    <link  href="dashBoardDocumentStyle.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <script src="script.js" ></script>
+
+
+    <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+    </script>
+    <script type = "text/javascript">
+        google.charts.load('current', {packages: ['corechart']});
+    </script>
+
+
+
+</head>
+<body onload="inIt();">
+    <nav id="header">
+        <ul id="navList">
+            <li id="menu" class="menu"> <i class="fas fa-bars fa-2x" title="Menu"></i></li>
+            <li id="logo"><img src="ugu_picture1.png" height="35em"></li>
+            <li id="user" class="user"><img src="IMG_20161226_122734.jpg" width="40px" height="40px" id="userImg"><label id="Name" class="Name">Udit N. Sia</label></li>
+
+        </ul>
+    </nav>
+    <div id="menuBoard" class="menuBoard">
+        <ul>
+            <li class="menuElement"><label>Home</label></li>
+            <li class="menuElement"><label>Theory</label></li>
+            <li class="menuElement"><label>Sessional Marks</label></li>
+            <li class="menuElement"><label>Check Attendance</label></li>
+            <li class="menuElement"><label>Change Password</label></li>
+        </ul>
+    </div>
+   <!-- <div id="mask" class="mask">
+         Mask Here
+
+    </div>-->
+    <div id="profileMenu" class="profileMenu">
+        <ul>
+            <li class=".profileMenuElement " ><img class="absoluteImage" src="IMG_20161226_122734.jpg" width="100px" height="100px"><div id="imageOverlay"><br>Change Profile Picture</div></li>
+            <li id="uName"><label>User Name:&nbsp;</label><label>Udit</label><br>
+                <label>Email:&nbsp;</label><label>udit.sia@gmail.com</label>
+            </li>
+            <li class=".profileMenuElement phase1 absoluteButton"><button id="profileButton">Edit Profile</button></li>
+            <li class=".profileMenuElement phase2 absoluteButton"><button id="logOut">Log out</button></li>
+        </ul>
+    </div>
+<article id="mainArticle">
+    <section id="main-container" class="main">
+        <div id="wrap-container" class="container" >
+            <label class="category">Personal Activity Area</label>
+            <div id="flex-container" class="flexBox">
+                <div class="object one"><i class="fas fa-address-card fa-3x"></i><br>View Complete Profile</div>
+                <div class="object four"><i class="fas fa-key fa-3x"></i><br>Change Password</div>
+                <div class="object three"><i class="fas fa-phone fa-3x"></i><br>Add Phone Number</div>
+                <div class="object two"><i class="fas fa-address-book fa-3x"></i><br>Add Residential Address</div>
+                <div class="object one"><i class="far fa-envelope fa-3x"></i><br>Add Email Address</div>
+                <div class="object five"><i class="fas fa-share-square fa-3x"></i><br>Request Sent</div>
+                <div class="object four"><i class="fas fa-arrow-left fa-3x"></i><br>Requested By </div>
+
+            </div>
+        </div>
+
+
+        <div  class="container">
+            <label class="category">College Activity Area</label>
+            <div class="flexBox" >
+                <div class="object one"><i class="fas fa-book fa-3x"></i><br>Subject Assign</div>
+                <div class="object eight"><i class="fas fa-battery-three-quarters fa-3x"></i><br>View Course Progress</div>
+                <div class="object three"><i class="fas fa-phone fa-3x"></i><br>Student Portal</div>
+                <div class="object two"><i class="fas fa-check-square fa-3x"></i><br>Grant Access</div>
+                <div class="object one"><i class="fas fa-link fa-3x"></i><br>Assign Link</div>
+                <div class="object five"><i class="fas fa-share-square fa-3x"></i><br>Attendance Report</div>
+                <div class="object four"><i class="fas fa-arrow-left fa-3x"></i><br>User Log Report </div>
+
+                <div class="object six"><i class="fas fa-table fa-3x"></i><br>Prepare Time Table</div>
+                <div class="object nine"><i class="fas fa-phone fa-3x"></i><br>Hostel Attendance</div>
+                <div class="object seven"><i class="fas fa-address-book fa-3x"></i><br>Attendance Entry</div>
+                <div class="object one"><i class="far fa-envelope fa-3x"></i><br>Mark Entry</div>
+                <div class="object five"><i class="fas fa-share-square fa-3x"></i><br>Sessional Mark</div>
+                <div class="object six"><i class="fas fa-sign-in-alt fa-3x"></i><br>Backdate Attendance Entry </div>
+
+            </div>
+        </div>
+
+
+        <div  class="container" >
+            <label class="category">Other Information</label>
+            <div class="flexBox" >
+                <div class="object one"><i class="fas fa-book fa-3x"></i><br>Library Details</div>
+                <div class="object eight"><i class="fas fa-battery-three-quarters fa-3x"></i><br>Company Specific Resources</div>
+                <div class="object three"><i class="fas fa-phone fa-3x"></i><br>Appraisal details</div>
+                <div class="object two"><i class="fas fa-check-square fa-3x"></i><br>Notice</div>
+                <div class="object one"><i class="fas fa-link fa-3x"></i><br>Assign Link</div>
+                <div class="object five"><i class="fas fa-share-square fa-3x"></i><br>back Paper Details</div>
+                <div class="object four"><i class="fas fa-arrow-left fa-3x"></i><br>Create Notice</div>
+                <div class="object six"><i class="fas fa-table fa-3x"></i><br>Feedback Key Gen</div>
+                <div class="object nine"><i class="fas fa-phone fa-3x"></i><br>Complaints Details</div>
+            </div>
+        </div>
+
+
+        <div  class="container1" >
+            <label class="category1">Attendance & Notice</label>
+            <div class="noFlex" >
+                <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto">
+                </div>
+                <div class="noticeContainer"><i class="fas fas fa-sticky-note fa-3x"></i><br>Notice</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script type="text/javascript">
+                    var barsVisualization;
+
+                    function drawMouseoverVisualization() {
+                        var data = new google.visualization.DataTable();
+                        var data = google.visualization.arrayToDataTable([
+                            ['Subject', 'Percentage', { role: 'style' }, { role: 'annotation' } ],
+                            ['IWT', 80, '#75FF33', 'IWT' ],
+                            ['WSN', 35, '#FF5733', 'WSN' ],
+                            ['DCCN', 90, '#33FF57', 'DCCN' ],
+                            ['CD', 75, '#DBFF33', 'CD' ],
+                            ['ESE', 60, '#FFBD33', 'ESE' ]
+                        ]);
+
+                        var options = {hAxis: {title: 'Subject', titleTextStyle: {color: 'gray'}},vAxis: { minValue: 0, maxValue: 100, format: '#\'%\'',title: 'Percentage', titleTextStyle: {color: 'gray'}},
+                            colors: ['red','green'],title: 'Attendance Status','width':400,'height':300,'is3D':true,'legend':'left', isStacked:true};
+                        barsVisualization = new google.visualization.ColumnChart(document.getElementById('container'));
+                        barsVisualization.draw(data, options);
+
+                        // Add our over/out handlers.
+                        google.visualization.events.addListener(barsVisualization, 'onmouseover', barMouseOver);
+                        google.visualization.events.addListener(barsVisualization, 'onmouseout', barMouseOut);
+                    }
+
+                    function barMouseOver(e) {
+                        barsVisualization.setSelection([e]);
+                    }
+
+                    function barMouseOut(e) {
+                        barsVisualization.setSelection([{'row': null, 'column': null}]);
+                    }
+                    google.charts.setOnLoadCallback(drawMouseoverVisualization);
+                </script>
+
+
+            </div>
+        </div>
+    </section>
+</article>
+</body>
+</html>
