@@ -1,4 +1,5 @@
-
+//js file
+var s=0;
 var menuFlag = false;
 var profileFlag = false;
 function inIt() {
